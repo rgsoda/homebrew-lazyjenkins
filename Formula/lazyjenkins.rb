@@ -5,21 +5,21 @@
 class Lazyjenkins < Formula
   desc "Lazygit-style TUI for the jk Jenkins CLI"
   homepage "https://github.com/rgsoda/lazyjenkins"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.6.0/lazyjenkins_darwin_amd64.tar.gz"
-      sha256 "6754f6e2ec0dede87fba574a7facdc47c921ff7c20ce61d62654e5dc181d3b43"
+      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.7.0/lazyjenkins_darwin_amd64.tar.gz"
+      sha256 "a12434df7278e3e3205b11e85899b699f071869ff69beccbcec308f4a95580d1"
 
       define_method(:install) do
         bin.install "lazyjenkins"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.6.0/lazyjenkins_darwin_arm64.tar.gz"
-      sha256 "8fc18b1b1032427bc34326766c219f66d0afb8d85a37368b2d1c16154c229fbf"
+      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.7.0/lazyjenkins_darwin_arm64.tar.gz"
+      sha256 "f71ec73c9d8c12ee9e2322a52fe10ca138d8d02a0552436a82177817457ec0c4"
 
       define_method(:install) do
         bin.install "lazyjenkins"
@@ -29,15 +29,15 @@ class Lazyjenkins < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.6.0/lazyjenkins_linux_amd64.tar.gz"
-      sha256 "d2e70282be11d66ac352715470353efd21397a13ad17030b75b8b049678c399f"
+      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.7.0/lazyjenkins_linux_amd64.tar.gz"
+      sha256 "bb140db03cc591d57f54c51e6efb3c61a36f9869e5c9ef535a4874b7232f6003"
       define_method(:install) do
         bin.install "lazyjenkins"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.6.0/lazyjenkins_linux_arm64.tar.gz"
-      sha256 "5825b904d58f37fd03cda4135190ea617b336d7be1ea3cf9c29cb298d991d921"
+      url "https://github.com/rgsoda/lazyjenkins/releases/download/v0.7.0/lazyjenkins_linux_arm64.tar.gz"
+      sha256 "d4da03671bda6c631cc39e6eb00ae0cb140fcc073733138be11de1ecea9ac87b"
       define_method(:install) do
         bin.install "lazyjenkins"
       end
